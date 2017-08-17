@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#bebebe</color> //p_content
+    <color name="colorPrimaryDark">#ffffff</color> //White
+    <color name="colorAccent">#daa7a4</color> //p_author, p_title color
+</resources>
