@@ -204,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
     public void takeScreenShot(){
         // 현재 화면을 지정할 View 컨테이너 생성
         View container;
-        container = getWindow().findViewById(R.id.pager);
+        container = getWindow().findViewById(R.id.viewpager);
         container.buildDrawingCache(); // 현재 pager 레이아웃의 상태 담기
         Bitmap captureView = container.getDrawingCache();
 
@@ -226,7 +226,7 @@ public class MainActivity extends AppCompatActivity {
         try{
 
             fos = new FileOutputStream(savings);
-            captureView.compress(Bitmap.CompressFormat.JPEG,10,fos);
+            captureView.compress(Bitmap.CompressFormat.JPEG,120,fos);
 
         }catch(FileNotFoundException e)
         {

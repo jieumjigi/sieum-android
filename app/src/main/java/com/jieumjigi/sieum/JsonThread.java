@@ -22,7 +22,7 @@ import okhttp3.Response;
 public class JsonThread extends Thread {
     private String url;
     private OkHttpClient mClient;
-    String base_url = "https://si-eum-169901.appspot.com/";
+    String base_url = "https://sieum-176605.appspot.com/";
 
     public JsonThread(String keyword) {
         this.url = base_url+keyword;

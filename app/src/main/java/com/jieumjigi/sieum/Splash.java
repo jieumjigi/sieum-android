@@ -35,7 +35,7 @@ public class Splash extends AppCompatActivity {
 
             @Override
             public void run() {
-                subtitle.setText("' 시음 - Taste a poem '");
+                subtitle.setText(" Taste a poem ");
             }
         }, 1500);
         handler.postDelayed(new Runnable() {
