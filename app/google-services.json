@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "964834959091",
+    "firebase_url": "https://sieum-474e9.firebaseio.com",
+    "project_id": "sieum-474e9",
+    "storage_bucket": "sieum-474e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964834959091:android:40d59bd9fa14a65f",
+        "android_client_info": {
+          "package_name": "com.jieumjigi.sieum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964834959091-f85i3drd79ka1hk47q2gchv683nek19g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfHmEfrQewzhM-wj1L7Rtbjy1qpRoejWY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
