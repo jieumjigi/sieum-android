@@ -13,7 +13,7 @@ import com.squareup.picasso.Target
 import org.jetbrains.anko.dip
 import java.lang.Exception
 
-class RoundedImageView(context: Context, attributeSet: AttributeSet?) : View(context, attributeSet), Target {
+class RoundImageView(context: Context, attributeSet: AttributeSet?) : View(context, attributeSet), Target {
     constructor(context: Context) : this(context, null)
 
     private var drawable: Drawable? = null
