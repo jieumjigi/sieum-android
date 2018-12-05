@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
 class SieumClient {
-    const val BASE_URL = BuildConfig.BASE_URL
+    val BASE_URL = BuildConfig.BASE_URL
     private val TIMEOUT_CONNECT = 15L
 
     private val retrofit: Retrofit
