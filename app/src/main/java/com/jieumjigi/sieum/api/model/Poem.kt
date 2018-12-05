@@ -1,4 +1,4 @@
-package com.jieumjigi.sieum
+package com.jieumjigi.sieum.api.model
 
 data class Poem (
         var reservation_date : String,
