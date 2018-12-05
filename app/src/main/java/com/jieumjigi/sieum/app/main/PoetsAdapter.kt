@@ -3,15 +3,12 @@ package com.jieumjigi.sieum.app.main
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.jieumjigi.sieum.R
 import com.jieumjigi.sieum.api.model.User
 import com.jieumjigi.sieum.util.RoundImageView
-import org.threeten.bp.LocalDateTime
-import java.text.SimpleDateFormat
 
-class MainAdapter(var poetList: List<User>) : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
+class PoetsAdapter(var poetList: List<User>) : RecyclerView.Adapter<PoetsAdapter.ViewHolder>() {
     private var listener: OnClickListener? = null
 
     fun setListener(clickListener: OnClickListener) {

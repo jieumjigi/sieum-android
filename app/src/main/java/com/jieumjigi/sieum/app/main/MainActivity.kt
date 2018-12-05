@@ -2,12 +2,16 @@ package com.jieumjigi.sieum.app.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.jieumjigi.sieum.api.model.Poem
 import com.jieumjigi.sieum.R
+import com.jieumjigi.sieum.api.model.User
+import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), PoetsAdapter.OnClickListener {
 
     lateinit var firebaseDatabase: FirebaseDatabase
     lateinit var databaseReference : DatabaseReference
@@ -29,12 +33,28 @@ class MainActivity : AppCompatActivity() {
         )
 
         writeNewPoem(poem)
+        initMainAdapter()
 
 
     }
 
+    fun initMainAdapter(){
+        rvPoet.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
+        val poetsAdapter = PoetsAdapter(ArrayList())
+        poetsAdapter.setListener(this)
+        rvPoet.adapter = poetsAdapter
+    }
+
     fun writeNewPoem (poem : Poem){
         databaseReference.push().setValue(poem)
+    }
+
+    override fun onItemClick(poet: User, position: Int) {
+        TODO("When the poet adapter item clicked") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onItemDelete(poet: User) {
+        TODO("When the poet adapter item deleted") //To change body of created functions use File | Settings | File Templates.
     }
 
     /**
